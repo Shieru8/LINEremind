@@ -1,4 +1,7 @@
-import { main } from "./main";
+import remind from './remind'
 
-// @ts-ignore
-global.main = main;
+declare const global: {
+  [x: string]: unknown
+}
+
+global.remind = remind
