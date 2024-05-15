@@ -1,7 +1,9 @@
-import remind from './remind'
+import { Term, Phrase, PenPhrase } from './remind'
 
 declare const global: {
   [x: string]: unknown
 }
 
-global.remind = remind
+global.Term = Term
+global.Phrase = Phrase
+global.PenPhrase = PenPhrase

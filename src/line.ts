@@ -1,7 +1,7 @@
 const prop = PropertiesService.getScriptProperties().getProperties()
 const CHANEL_ACCESS_TOKEN = prop.CHANEL_ACCESS_TOKEN
 
-export const sendPushMessage = (messages: string) => {
+export const sendMessage = (messages: string) => {
   const ENDPOINT_URL = 'https://api.line.me/v2/bot/message/broadcast'
   const options = {
     headers: {
